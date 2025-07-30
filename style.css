@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #3a3a5a;
+}
+
+.section {
+  padding: 100px 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inicio-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+.anime-img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.intro-text h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #1e1e2f;
+}
+
+.intro-text h2 {
+  margin: 10px 0;
+  color: #555;
+}
+
+.acerca-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.acerca-container p {
+  flex: 1 1 60%;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.retrato {
+  flex: 1 1 30%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1e1e2f;
+  margin-top: 20px;
+}
+
+.habilidades-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.habilidades-img img {
+  width: 22%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.habilidades-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.habilidades-text li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-image {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  opacity: 0.85;
+  border-radius: 10px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e1e2f;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #44446a;
+}
+
+.contacto-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formulario {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #1e1e2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #44446a;
+}
+
+.info-contacto {
+  flex: 1 1 35%;
+  font-size: 1.05em;
+}
+
+footer {
+  background-color: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+  .inicio-container,
+  .acerca-container,
+  .contacto-container,
+  .habilidades-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .habilidades-img img {
+    width: 90%;
+    height: auto;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    background-color: #1e1e2f;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+}
