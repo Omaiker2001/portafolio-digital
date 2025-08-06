@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio Omaiker</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -12,14 +12,15 @@
     }
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: url('https://i.pinimg.com/736x/32/3e/63/323e63598bdc6e656a64b452f2206853.jpg') no-repeat center center fixed;
+      font-family: 'Roboto Condensed', sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('https://w.wallhaven.cc/full/5g/wallhaven-5g86w1.png') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
+      font-size: 18px;
     }
     header {
       background: rgba(0, 0, 0, 0.8);
-      color: white;
       padding: 20px;
       position: sticky;
       top: 0;
@@ -32,37 +33,38 @@
       color: white;
       margin: 0 15px;
       text-decoration: none;
+      font-size: 18px;
       transition: color 0.3s;
     }
     nav a:hover {
       color: #00ffff;
     }
     section {
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
     .foto {
-      max-width: 200px;
+      width: 220px;
       border-radius: 50%;
-      box-shadow: 0 0 15px rgba(255,255,255,0.5);
+      box-shadow: 0 0 20px rgba(255,255,255,0.4);
     }
     .section-title {
-      font-size: 32px;
-      margin-bottom: 20px;
+      font-size: 38px;
+      margin-bottom: 30px;
       text-transform: uppercase;
     }
     .cards {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
       justify-content: center;
     }
     .card {
       background: rgba(0,0,0,0.7);
-      padding: 20px;
-      border-radius: 10px;
-      width: 250px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      padding: 25px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
       transition: transform 0.3s;
     }
     .card:hover {
@@ -70,15 +72,23 @@
     }
     .card img {
       width: 100%;
-      height: 150px;
+      height: 170px;
       object-fit: cover;
       border-radius: 10px;
     }
+    .inicio-container {
+      max-width: 600px;
+      margin: auto;
+    }
+    .inicio-container p {
+      font-size: 24px;
+      line-height: 1.6;
+    }
     footer {
-      background: rgba(0,0,0,0.8);
+      background: rgba(0,0,0,0.85);
       text-align: center;
-      padding: 20px;
-      color: white;
+      padding: 25px;
+      font-size: 16px;
     }
     a {
       color: #00ffff;
@@ -99,29 +109,30 @@
 
   <section id="inicio">
     <h2 class="section-title">Bienvenido</h2>
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-      <img class="foto" src="https://i.pinimg.com/736x/71/12/8d/71128d404cf4299dc6b0b508bc4b19a5.jpg" alt="Foto de Omaiker">
-      <p><strong>Ingeniero en Sistemas</strong> y <strong>Editor Profesional</strong>. Explora mis habilidades y proyectos.</p>
+    <div class="inicio-container">
+       <img class="foto" src="https://drive.google.com/file/d/1nfI7a_QEfVLDgoCP1L1Rs5DaI6nNYzcs/view?usp=sharing" alt="Foto de Omaiker">
+      <p><strong>Ingeniero en Sistemas</strong> y <strong>Editor Profesional</strong>. 
+        Explora mis habilidades y proyectos desarrollados para el mundo digital moderno.</p>
     </div>
   </section>
 
   <section id="acerca">
     <h2 class="section-title">Sobre mí</h2>
-    <p>Mi nombre es Omaiker Perez Castro. Me especializo en ingeniería de sistemas y edición profesional. Soy apasionado por la tecnología, el diseño web y la edición creativa.</p>
+    <p>Soy Omaiker Perez Castro, profesional en Ingeniería de Sistemas y Edición Profesional. Me dedico a crear soluciones tecnológicas, páginas web atractivas y contenidos multimedia de alto impacto.</p>
   </section>
 
   <section id="habilidades">
     <h2 class="section-title">Habilidades</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://i.pinimg.com/736x/c9/66/e1/c966e191d57762e93de79e20e8552eb3.jpg" alt="Edición de Video">
+        <img src="https://i.pinimg.com/736x/32/3e/63/323e63598bdc6e656a64b452f2206853.jpg" alt="Edición de Video">
         <h3>Edición de Video</h3>
-        <p>Adobe Premiere y After Effects para crear contenido profesional audiovisual.</p>
+        <p>Adobe Premiere y After Effects para producir contenido profesional y creativo.</p>
       </div>
       <div class="card">
         <img src="https://i.pinimg.com/736x/11/17/af/1117afa32ade66460bd3b95037324198.jpg" alt="Desarrollo Web">
         <h3>Desarrollo Web</h3>
-        <p>HTML5, CSS, JavaScript y despliegue con Vercel.</p>
+        <p>Uso de HTML5, CSS3, JavaScript y despliegue en Vercel.</p>
       </div>
     </div>
   </section>
@@ -132,24 +143,17 @@
       <div class="card">
         <img src="https://i.pinimg.com/1200x/52/ae/c9/52aec9c2ebc19ebfe0e24a7f94d890a2.jpg" alt="Sitio Web Personal">
         <h3>Portafolio Web</h3>
-        <p>Diseño de este sitio como proyecto profesional con HTML5 y CSS3.</p>
+        <p>Diseño y programación de este portafolio profesional para mostrar mi trabajo.</p>
       </div>
       <div class="card">
         <img src="https://i.pinimg.com/736x/92/16/bc/9216bcd74a3d55de1a26021541003489.jpg" alt="Blog Cine-Series">
         <h3>Blog Cine-Series</h3>
-        <p><a href="https://sites.google.com/view/cine-series/inicio" target="_blank">Visítalo aquí</a></p>
+        <p><a href="https://sites.google.com/view/cine-series/inicio" target="_blank">Visita el blog</a></p>
       </div>
     </div>
   </section>
 
   <section id="blog">
     <h2 class="section-title">Blog</h2>
-    <p>Descubre mi contenido sobre cine y series:</p>
+    <p>Explora artículos, reseñas y análisis sobre cine y series:</p>
     <p><a href="https://sites.google.com/view/cine-series/inicio" target="_blank">https://sites.google.com/view/cine-series/inicio</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Omaiker Perez Castro. Todos los derechos reservados.</p>
-  </footer>
-</body>
-</html>
