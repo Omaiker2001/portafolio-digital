@@ -4,18 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio Omaiker</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background: url('https://i.pinimg.com/736x/32/3e/63/323e63598bdc6e656a64b452f2206853.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
     header {
-      background-color: #222;
-      color: #fff;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
       padding: 20px;
       position: sticky;
       top: 0;
@@ -25,22 +29,27 @@
       align-items: center;
     }
     nav a {
-      color: #fff;
-      margin: 0 10px;
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00ffff;
     }
     section {
       padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+      text-align: center;
     }
     .foto {
       max-width: 200px;
-      border-radius: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(255,255,255,0.5);
     }
     .section-title {
-      font-size: 28px;
+      font-size: 32px;
       margin-bottom: 20px;
+      text-transform: uppercase;
     }
     .cards {
       display: flex;
@@ -49,24 +58,30 @@
       justify-content: center;
     }
     .card {
-      background: #fff;
+      background: rgba(0,0,0,0.7);
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       width: 250px;
-      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
     }
     .card img {
       width: 100%;
-      border-radius: 10px;
       height: 150px;
       object-fit: cover;
+      border-radius: 10px;
     }
     footer {
+      background: rgba(0,0,0,0.8);
       text-align: center;
       padding: 20px;
-      background: #222;
-      color: #fff;
+      color: white;
+    }
+    a {
+      color: #00ffff;
     }
   </style>
 </head>
@@ -83,16 +98,16 @@
   </header>
 
   <section id="inicio">
-    <h2 class="section-title">Bienvenido a mi Portafolio</h2>
-    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+    <h2 class="section-title">Bienvenido</h2>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
       <img class="foto" src="https://i.pinimg.com/736x/71/12/8d/71128d404cf4299dc6b0b508bc4b19a5.jpg" alt="Foto de Omaiker">
-      <p>Soy <strong>Ingeniero en Sistemas</strong> y <strong>Editor Profesional</strong>. Este portafolio muestra una selección de mis habilidades y proyectos más relevantes.</p>
+      <p><strong>Ingeniero en Sistemas</strong> y <strong>Editor Profesional</strong>. Explora mis habilidades y proyectos.</p>
     </div>
   </section>
 
   <section id="acerca">
     <h2 class="section-title">Sobre mí</h2>
-    <p>Mi nombre es Omaiker Perez Castro. Me desempeño como Ingeniero en Sistemas y Editor Profesional. Me apasiona la tecnología, el diseño y la creación de contenido visual de alta calidad.</p>
+    <p>Mi nombre es Omaiker Perez Castro. Me especializo en ingeniería de sistemas y edición profesional. Soy apasionado por la tecnología, el diseño web y la edición creativa.</p>
   </section>
 
   <section id="habilidades">
@@ -101,12 +116,12 @@
       <div class="card">
         <img src="https://i.pinimg.com/736x/c9/66/e1/c966e191d57762e93de79e20e8552eb3.jpg" alt="Edición de Video">
         <h3>Edición de Video</h3>
-        <p>Experiencia en Adobe Premiere y After Effects para proyectos visuales profesionales.</p>
+        <p>Adobe Premiere y After Effects para crear contenido profesional audiovisual.</p>
       </div>
       <div class="card">
-        <img src="https://i.pinimg.com/736x/11/17/af/1117afa32ade66460bd3b95037324198.jpg" alt="Programación Web">
+        <img src="https://i.pinimg.com/736x/11/17/af/1117afa32ade66460bd3b95037324198.jpg" alt="Desarrollo Web">
         <h3>Desarrollo Web</h3>
-        <p>Dominio de HTML5, CSS y conocimientos de JavaScript para construir sitios modernos.</p>
+        <p>HTML5, CSS, JavaScript y despliegue con Vercel.</p>
       </div>
     </div>
   </section>
@@ -115,21 +130,21 @@
     <h2 class="section-title">Proyectos</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://i.pinimg.com/1200x/52/ae/c9/52aec9c2ebc19ebfe0e24a7f94d890a2.jpg" alt="Proyecto Web">
-        <h3>Sitio Web Personal</h3>
-        <p>Diseño y desarrollo de portafolio profesional con HTML5, CSS y Vercel.</p>
+        <img src="https://i.pinimg.com/1200x/52/ae/c9/52aec9c2ebc19ebfe0e24a7f94d890a2.jpg" alt="Sitio Web Personal">
+        <h3>Portafolio Web</h3>
+        <p>Diseño de este sitio como proyecto profesional con HTML5 y CSS3.</p>
       </div>
       <div class="card">
-        <img src="https://i.pinimg.com/736x/92/16/bc/9216bcd74a3d55de1a26021541003489.jpg" alt="Blog Cine y Series">
+        <img src="https://i.pinimg.com/736x/92/16/bc/9216bcd74a3d55de1a26021541003489.jpg" alt="Blog Cine-Series">
         <h3>Blog Cine-Series</h3>
-        <p>Contenido interactivo sobre cine y series: <a href="https://sites.google.com/view/cine-series/inicio" target="_blank">Ver Blog</a></p>
+        <p><a href="https://sites.google.com/view/cine-series/inicio" target="_blank">Visítalo aquí</a></p>
       </div>
     </div>
   </section>
 
   <section id="blog">
     <h2 class="section-title">Blog</h2>
-    <p>Visita mi blog sobre Cine y Series donde comparto reseñas, análisis y recomendaciones:</p>
+    <p>Descubre mi contenido sobre cine y series:</p>
     <p><a href="https://sites.google.com/view/cine-series/inicio" target="_blank">https://sites.google.com/view/cine-series/inicio</a></p>
   </section>
 
@@ -138,4 +153,3 @@
   </footer>
 </body>
 </html>
-
