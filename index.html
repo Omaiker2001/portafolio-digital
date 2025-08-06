@@ -4,319 +4,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio Omaiker</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #f0f4f8, #ffffff);
+      background-color: #f4f4f4;
       color: #333;
     }
-
-    .navbar {
-      position: fixed;
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      position: sticky;
       top: 0;
-      width: 100%;
-      background-color: #181c2b;
-      display: flex;
-      justify-content: center;
       z-index: 1000;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    }
-
-    .navbar ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 25px;
-    }
-
-    .navbar a {
-      padding: 15px 25px;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    .navbar a:hover {
-      background-color: #3c3f58;
-      border-radius: 5px;
-      color: #ffc107;
-    }
-
-    .section {
-      padding: 110px 30px 70px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .inicio-container {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .anime-img {
-      width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
-    .intro-text h1 {
-      margin: 0;
-      font-size: 3em;
-      color: #181c2b;
-    }
-
-    .intro-text h2 {
-      margin: 10px 0;
-      color: #444;
-    }
-
-    .acerca-container {
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
       align-items: center;
     }
-
-    .acerca-container p {
-      flex: 1 1 60%;
-      font-size: 1.2em;
-      line-height: 1.7;
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
     }
-
-    .retrato {
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #181c2b;
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-
-    .habilidades-img {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
+    .foto {
+      max-width: 200px;
+      border-radius: 10px;
+    }
+    .section-title {
+      font-size: 28px;
       margin-bottom: 20px;
     }
-
-    .habilidades-img img {
-      width: 23%;
-      border-radius: 10px;
-      object-fit: cover;
-      height: 220px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    .habilidades-text ul {
-      padding: 0;
-      list-style-type: "🟊 ";
-    }
-
-    .habilidades-text li {
-      padding: 12px 0;
-      font-size: 1.05em;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .footer-image {
-      width: 100%;
-      margin-top: 30px;
-      opacity: 0.95;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
-    .boton {
-      display: inline-block;
-      padding: 12px 25px;
-      background-color: #181c2b;
-      color: white;
-      font-weight: 600;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .boton:hover {
-      background-color: #ffc107;
-      color: #181c2b;
-    }
-
-    .contacto-container {
+    .cards {
       display: flex;
-      gap: 30px;
       flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
-
-    .formulario {
-      flex: 1 1 60%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .formulario label {
-      margin-top: 10px;
-      font-weight: 600;
-    }
-
-    .formulario input,
-    .formulario textarea {
-      padding: 12px;
-      margin-top: 5px;
-      border: 1px solid #bbb;
-      border-radius: 8px;
-      font-size: 1em;
-    }
-
-    .formulario button {
-      margin-top: 20px;
-      padding: 12px;
-      background-color: #181c2b;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .formulario button:hover {
-      background-color: #ffc107;
-      color: #181c2b;
-    }
-
-    .info-contacto {
-      flex: 1 1 35%;
-      font-size: 1.1em;
-      background-color: #f3f3f3;
+    .card {
+      background: #fff;
       padding: 20px;
-      border-radius: 12px;
-    }
-
-    footer {
-      background-color: #181c2b;
-      color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 250px;
       text-align: center;
-      padding: 25px;
-      margin-top: 50px;
-      font-size: 0.95em;
     }
-
-    @media screen and (max-width: 768px) {
-      .inicio-container,
-      .acerca-container,
-      .contacto-container,
-      .habilidades-img {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .habilidades-img img {
-        width: 90%;
-        height: auto;
-      }
-
-      .navbar ul {
-        flex-direction: column;
-      }
-
-      .navbar a {
-        padding: 12px;
-      }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 150px;
+      object-fit: cover;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#acerca">Acerca de</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+    <h1>Omaiker Perez Castro</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#acerca">Acerca de</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#blog">Blog</a>
     </nav>
   </header>
 
-  <section id="inicio" class="section">
-    <div class="inicio-container">
-      <img src="https://i.pinimg.com/originals/e7/5e/90/e75e903593c0909bcb7d942fa37e6103.jpg" alt="Foto de anime" class="anime-img" />
-      <div class="intro-text">
-        <h1>Omaiker Perez Castro</h1>
-        <h2>Fotógrafo y editor profesional</h2>
-        <p>Matrícula: 20-SISN-2-014</p>
+  <section id="inicio">
+    <h2 class="section-title">Bienvenido a mi Portafolio</h2>
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+      <img class="foto" src="https://i.pinimg.com/736x/71/12/8d/71128d404cf4299dc6b0b508bc4b19a5.jpg" alt="Foto de Omaiker">
+      <p>Soy <strong>Ingeniero en Sistemas</strong> y <strong>Editor Profesional</strong>. Este portafolio muestra una selección de mis habilidades y proyectos más relevantes.</p>
+    </div>
+  </section>
+
+  <section id="acerca">
+    <h2 class="section-title">Sobre mí</h2>
+    <p>Mi nombre es Omaiker Perez Castro. Me desempeño como Ingeniero en Sistemas y Editor Profesional. Me apasiona la tecnología, el diseño y la creación de contenido visual de alta calidad.</p>
+  </section>
+
+  <section id="habilidades">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/c9/66/e1/c966e191d57762e93de79e20e8552eb3.jpg" alt="Edición de Video">
+        <h3>Edición de Video</h3>
+        <p>Experiencia en Adobe Premiere y After Effects para proyectos visuales profesionales.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/11/17/af/1117afa32ade66460bd3b95037324198.jpg" alt="Programación Web">
+        <h3>Desarrollo Web</h3>
+        <p>Dominio de HTML5, CSS y conocimientos de JavaScript para construir sitios modernos.</p>
       </div>
     </div>
   </section>
 
-  <section id="acerca" class="section">
-    <h2>Acerca de Mí</h2>
-    <div class="acerca-container">
-      <p>Soy fotógrafo y editor profesional, especializado en capturar momentos únicos y darles vida a través de la edición. Mi trabajo combina creatividad, técnica y atención al detalle para lograr imágenes que transmitan emociones y cuenten historias auténticas.</p>
-      <img src="https://i.pinimg.com/564x/59/4c/ce/594cce308725c65a9883d26e2be98b89.jpg" alt="Retrato" class="retrato" />
-    </div>
-  </section>
-
-  <section id="habilidades" class="section">
-    <h2>Habilidades</h2>
-    <div class="habilidades-img">
-      <img src="https://i.pinimg.com/736x/66/7c/8e/667c8e7739db235d531dde6bbf633577.jpg" alt="Puesta de sol" />
-      <img src="https://i.pinimg.com/1200x/35/9d/4f/359d4f3cb8046fc1b7d7b7d04b267bdb.jpg" alt="Atardecer" />
-      <img src="https://i.pinimg.com/1200x/6a/44/bc/6a44bc1a397cc2496f12f993f5064548.jpg" alt="Montañas verdes" />
-      <img src="https://i.pinimg.com/736x/a2/7b/2b/a27b2bee3a8d17f9fb935c3bd681c008.jpg" alt="Paisaje rural" />
-    </div>
-    <div class="habilidades-text">
-      <ul>
-        <li>Composición de luz para ambientes rurales y cinemáticos.</li>
-        <li>Retratos artísticos, profesionales y conceptuales.</li>
-        <li>Edición en Photoshop, Illustrator y DaVinci Resolve.</li>
-        <li>Producción de contenido multimedia y visuales 3D.</li>
-        <li>Remasterización y edición cinematográfica.</li>
-      </ul>
-    </div>
-    <img src="https://i.pinimg.com/1200x/d8/86/c9/d886c9b0c60d902c7bde1e3fa4bc54e9.jpg" class="footer-image" alt="Paisaje cinematográfico" />
-  </section>
-
-  <section id="proyectos" class="section">
-    <h2>Proyectos</h2>
-    <p>Blog Personal sobre Cine</p>
-    <p>Creado como parte de mis estudios, este blog explora películas y comparte análisis visuales, detrás de cámaras e información artística.</p>
-    <a href="https://sites.google.com/view/cine-series/inicio" class="boton" target="_blank">Visita el Blog</a>
-  </section>
-
-  <section id="contacto" class="section">
-    <h2>Contacto</h2>
-    <div class="contacto-container">
-      <form class="formulario">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-        <button type="submit">Enviar Mensaje</button>
-      </form>
-
-      <div class="info-contacto">
-        <p><strong>Servicio:</strong> Fotografía y edición profesional</p>
-        <p><strong>Email:</strong> omaiker@example.com</p>
-        <p><strong>Teléfono:</strong> 829-958-0696</p>
-        <p><strong>Ubicación:</strong> La Romana, República Dominicana</p>
+  <section id="proyectos">
+    <h2 class="section-title">Proyectos</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/52/ae/c9/52aec9c2ebc19ebfe0e24a7f94d890a2.jpg" alt="Proyecto Web">
+        <h3>Sitio Web Personal</h3>
+        <p>Diseño y desarrollo de portafolio profesional con HTML5, CSS y Vercel.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/92/16/bc/9216bcd74a3d55de1a26021541003489.jpg" alt="Blog Cine y Series">
+        <h3>Blog Cine-Series</h3>
+        <p>Contenido interactivo sobre cine y series: <a href="https://sites.google.com/view/cine-series/inicio" target="_blank">Ver Blog</a></p>
       </div>
     </div>
+  </section>
+
+  <section id="blog">
+    <h2 class="section-title">Blog</h2>
+    <p>Visita mi blog sobre Cine y Series donde comparto reseñas, análisis y recomendaciones:</p>
+    <p><a href="https://sites.google.com/view/cine-series/inicio" target="_blank">https://sites.google.com/view/cine-series/inicio</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Omaiker Perez. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Omaiker Perez Castro. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
