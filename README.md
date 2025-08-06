@@ -6,7 +6,7 @@
 - **Especialidad:** Fotógrafo y editor profesional
 
 ## 📘 Descripción del Proyecto
-Portafolio digital desarrollado como presentación profesional de mis servicios en fotografía y edición. Incluye secciones informativas, habilidades, proyectos y formulario de contacto.
+Portafolio digital desarrollado como presentación profesional de mis trabajos. Incluye secciones informativas, habilidades y proyectos.
 
 ## 🛠️ Tecnologías Utilizadas
 - HTML5
@@ -17,6 +17,6 @@ Portafolio digital desarrollado como presentación profesional de mis servicios 
 ## 📂 Secciones del Portafolio Digital
 - **Inicio**: Presentación personal
 - **Acerca de**: Biografía profesional y retrato circular.
-- **Habilidades**: Imágenes de paisajes, lista de competencias y pie visual cinemático.
+- **Habilidades**: Ingeniero en Sistemas y Editor Profesional.
 - **Proyectos**: Enlace a blog personal.
-- **Contacto**: Formulario de contacto y datos profesionales.
+
