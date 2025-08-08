@@ -14,6 +14,10 @@ Portafolio digital desarrollado como presentación profesional de mis trabajos. 
 - GitHub
 - Vercel
 
+## Enlaces
+- GitHub - https://github.com/Omaiker2001/portafolio-digital/tree/main
+- Vercel - https://portafolio-digital-jet.vercel.app/
+  
 ## 📂 Secciones del Portafolio Digital
 - **Inicio**: Presentación personal
 - **Acerca de**: Biografía profesional y retrato circular.
