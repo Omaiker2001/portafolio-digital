@@ -42,6 +42,13 @@
     section {
       padding: 80px 20px;
       text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
     .foto {
       width: 220px;
@@ -63,7 +70,7 @@
       background: rgba(0,0,0,0.7);
       padding: 25px;
       border-radius: 12px;
-      width: 280px;
+      width: 300px;
       box-shadow: 0 0 15px rgba(0,0,0,0.5);
       transition: transform 0.3s;
     }
@@ -84,6 +91,10 @@
       font-size: 24px;
       line-height: 1.6;
     }
+    form input, form textarea {
+      background-color: #111;
+      color: #fff;
+    }
     footer {
       background: rgba(0,0,0,0.85);
       text-align: center;
@@ -103,6 +114,7 @@
       <a href="#acerca">Acerca de</a>
       <a href="#habilidades">Habilidades</a>
       <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
       <a href="#blog">Blog</a>
     </nav>
   </header>
@@ -113,6 +125,19 @@
       <img class="foto" src="https://i.pinimg.com/736x/4f/57/fb/4f57fb81056ebd658f676f7410cb46eb.jpg" alt="Foto de Omaiker">
       <p><strong>Ingeniero en Sistemas</strong> y <strong>Editor Profesional</strong>. 
         Explora mis habilidades y proyectos desarrollados para el mundo digital moderno.</p>
+    </div>
+    <div style="margin-top: 40px;">
+      <a href="TU-CV.pdf" download style="
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 18px;
+        color: white;
+        background-color: #00bcd4;
+        border-radius: 8px;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        transition: background-color 0.3s;
+      ">Descargar CV</a>
     </div>
   </section>
 
@@ -134,6 +159,175 @@
   </section>
 
   <section id="habilidades">
-    <h2 class="section-title">Habili
+    <h2 class="section-title">Habilidades</h2>
+    <div class="cards">
 
-      
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/32/3e/63/323e63598bdc6e656a64b452f2206853.jpg" alt="Edición de Video">
+        <h3>Edición de Video</h3>
+        <p style="font-size: 20px;">
+          Producción audiovisual creativa y profesional utilizando:
+          <ul style="text-align: left; padding-left: 20px; font-size: 18px;">
+            <li>Adobe Premiere Pro</li>
+            <li>Adobe After Effects</li>
+            <li>Montaje narrativo y efectos visuales</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/11/17/af/1117afa32ade66460bd3b95037324198.jpg" alt="Desarrollo Web">
+        <h3>Desarrollo Web</h3>
+        <p style="font-size: 20px;">
+          Creación de sitios modernos y responsivos con:
+          <ul style="text-align: left; padding-left: 20px; font-size: 18px;">
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Deploy en GitHub Pages y Vercel</li>
+            <li>Diseño centrado en la experiencia del usuario</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/564x/bf/e1/32/bfe132d4e1d33f33189b67d9e1d5a902.jpg" alt="Fotografía Creativa">
+        <h3>Fotografía Creativa</h3>
+        <p style="font-size: 20px;">
+          Captura de imágenes con propósito artístico y comercial:
+          <ul style="text-align: left; padding-left: 20px; font-size: 18px;">
+            <li>Lightroom y Photoshop</li>
+            <li>Dirección de sesiones</li>
+            <li>Estética y composición</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/1a/5e/62/1a5e62adf56ec14262df0b48f361e3f5.jpg" alt="Diseño Gráfico">
+        <h3>Diseño Gráfico</h3>
+        <p style="font-size: 20px;">
+          Identidades visuales para marcas:
+          <ul style="text-align: left; padding-left: 20px; font-size: 18px;">
+            <li>Logotipos, banners y flyers</li>
+            <li>Illustrator, Canva</li>
+            <li>Aplicación en redes y presentaciones</li>
+          </ul>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <h2 class="section-title">Proyectos</h2>
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/52/ae/c9/52aec9c2ebc19ebfe0e24a7f94d890a2.jpg" alt="Portafolio Web">
+        <h3>Portafolio Web</h3>
+        <p style="font-size: 20px;">
+          Desarrollo completo de este portafolio:
+          <ul style="text-align: left; padding-left: 20px; font-size: 18px;">
+            <li>HTML5, CSS3</li>
+            <li>Vercel y GitHub</li>
+            <li>Diseño modular y responsive</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/92/16/bc/9216bcd74a3d55de1a26021541003489.jpg" alt="Blog Cine-Series">
+        <h3>Blog Cine-Series</h3>
+        <p style="font-size: 20px;">
+          Reseñas y análisis en Google Sites:
+          <ul style="text-align: left; padding-left: 20px; font-size: 18px;">
+            <li>Multimedia, formularios</li>
+            <li>Estética visual atractiva</li>
+            <li>Enlace: 
+              <a href="https://sites.google.com/view/cine-series/inicio" target="_blank">Visitar blog</a>
+            </li>
+          </ul>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2 class="section-title">Contacto</h2>
+    <form action="https://formspree.io/f/tuformid" method="POST" style="max-width: 600px; margin: auto; text-align: left;">
+      <label for="nombre" style="font-size: 18px;">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 12px; margin: 10px 0 20px; font-size: 16px; border-radius: 8px; border: none;">
+
+      <label for="correo" style="font-size: 18px;">Correo electrónico:</label><br>
+      <input type="email" id="correo" name="correo" required style="width: 100%; padding: 12px; margin: 10px 0 20px; font-size: 16px; border-radius: 8px; border: none;">
+
+      <label for="mensaje" style="font-size: 18px;">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="5" required style="width: 100%; padding: 12px; margin: 10px 0 20px; font-size: 16px; border-radius: 8px; border: none;"></textarea>
+
+      <button type="submit" style="background-color: #00bcd4; color: white; font-size: 18px; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer;">
+        Enviar mensaje
+      </button>
+    </form>
+  </section>
+
+  <section id="blog">
+    <h2 class="section-title">Blog</h2>
+    <p>Explora artículos, reseñas y análisis sobre cine y series:</p>
+    <p><a href="https://sites.google.com/view/cine-series/inicio" target="_blank">https://sites.google.com/view/cine-series/inicio</a></p>
+  </section>
+
+  <footer>
+    <div style="max-width: 900px; margin: auto;">
+      <p style="font-size: 18px;">&copy; 2025 Omaiker Perez Castro. Todos los derechos reservados.</p>
+      <p>
+        Diseñado con 💻 y 🎨 por Omaiker |
+        <a href="mailto:omaiker.perez@gmail.com">omaiker.perez@gmail.com</a> |
+        <a href="https://github.com/Omaiker2001" target="_blank">GitHub</a> |
+        <a href="https://sites.google.com/view/cine-series/inicio" target="_blank">Blog</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector("form");
+      const messageContainer = document.createElement("p");
+      messageContainer.style.color = "#00ffcc";
+      messageContainer.style.fontSize = "18px";
+      messageContainer.style.marginTop = "20px";
+      form.appendChild(messageContainer);
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        }).then(response => {
+          if (response.ok) {
+            messageContainer.textContent = "✅ Tu mensaje ha sido enviado exitosamente.";
+            form.reset();
+          } else {
+            messageContainer.textContent = "❌ Ocurrió un error al enviar el mensaje.";
+          }
+        }).catch(() => {
+          messageContainer.textContent = "❌ Error de red. Intenta de nuevo más tarde.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
